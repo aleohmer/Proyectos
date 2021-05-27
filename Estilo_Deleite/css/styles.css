@@ -1,0 +1,249 @@
+/******** To top button ********/
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  width: 50px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .4s ease
+}
+    
+.showBtn {
+  opacity: 75%;
+  transform: translateY(0)
+}
+
+.scrollToTopBtn:hover {
+    background-color: #555;
+}
+/******** End of To top button ********/
+
+body {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/************************ HEADER ************************/
+/******** Navbar ********/
+h1 {
+  margin: 35px 0px 0px 50px;
+  color: #2a2a2a;
+  font-weight: bold;
+}
+
+.navbar{
+  border-radius: 15px;
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  color: #2a2a2a;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
+  color: #2a2a2a;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#navbarSupportedContent .active {
+  font-size: 1.15em;
+  margin-top: -2px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-width: 5px;
+  border-color: #2a2a2a;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  background-color: white;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.10rem;
+}
+/******** End of Navbar ********/
+
+/******** Carousel ********/
+.carousel-control-prev, .carousel-control-next {
+  opacity: 20%;
+  background-color: black;
+  width: 80px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 60%;
+}
+/******** End ofCarousel ********/
+
+/******** Menu de la semana ********/
+#main-content {
+  margin-top: 50px;
+}
+h2 {
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  padding-top: 10px;
+  text-align: center;
+  color: yellow;
+}
+
+.row div {
+  padding-top: 20px;
+  width: 23%;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 10px;
+  box-sizing: border-box;
+  margin: 10px 0px 10px 0px;
+}
+
+.row #columna1:hover, .round:hover {
+  box-shadow: 0 1px 5px 1px white;
+}
+
+#descripcion {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#precio {
+  font-size: 28px;
+  font-weight: bold;
+  bottom: 38px;
+}
+
+#colones {
+  font-size: 15px;
+}
+
+#priceTag {
+  position: relative;
+  right: 15px;
+}
+
+.round {
+  border-radius: 15px;
+  box-shadow: 0 1px 5px 1px gray;
+}
+/******** End of Menu de la semana ********/
+
+
+
+/************************ MEDIA QUERY /************************
+/********** Xtra-Large devices **********/
+@media (min-width: 1400px) {
+
+}
+
+
+/********** Large devices **********/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .row div {
+    width: 23%;
+  }
+}
+
+/********** Medium devices **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .row div {
+      width: 47%;
+  }
+
+  #descripcion {
+    font-size: 16px;
+  }
+}
+
+/********** Small devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-control-prev, .carousel-control-next {
+      width: 50px;
+    }
+
+    #descripcion {
+      font-size: 14.7px;
+    }
+
+    .row div {
+      width: 47%;
+    }
+}
+
+/********** Xtra-small devices **********/
+@media (max-width: 767px) {
+  .carousel-control-prev, .carousel-control-next {
+    width: 40px;
+  }
+
+  #descripcion {
+    font-size: 16px;
+  }
+
+  .row div {
+    width: 90%;
+  }
+}
+
+
+/********** Xtra-Xtra-small devices **********/
+@media (max-width: 575px) {
+  #slide {
+    height: 150px;
+  }
+
+  h1 {
+    margin-top: 25px;
+  }
+}
