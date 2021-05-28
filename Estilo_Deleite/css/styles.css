@@ -1,6 +1,6 @@
 /******** To top button ********/
 .scrollToTopBtn {
-  background-color: black;
+  background-color: #4a4a4a;
   border: none;
   border-radius: 25px;
   color: white;
@@ -29,7 +29,8 @@
 }
 
 .scrollToTopBtn:hover {
-    background-color: #555;
+    background-color: white;
+    color: #4a4a4a;
 }
 /******** End of To top button ********/
 
@@ -46,7 +47,7 @@ body {
 /************************ HEADER ************************/
 /******** Navbar ********/
 h1 {
-  margin: 35px 0px 0px 50px;
+  margin: 25px 0px 0px 50px;
   color: #2a2a2a;
   font-weight: bold;
 }
@@ -54,6 +55,15 @@ h1 {
 .navbar{
   border-radius: 15px;
   background-color: white;
+}
+
+#img-logo {
+  height: 100px;
+  width: 100px;
+}
+
+#item {
+  padding-top: 10px;
 }
 
 .navbar-nav .nav-link {
@@ -64,8 +74,8 @@ h1 {
 
 .nav-link:focus, .nav-link:hover {
   text-decoration: none;
-  color: #2a2a2a;
-  background-color: white;
+  color: white;
+  background-color: #2a2a2a;
   border-radius: 15px;
 }
 
@@ -127,6 +137,7 @@ h1 {
 #main-content {
   margin-top: 50px;
 }
+
 h2 {
   margin-bottom: 60px;
   font-size: 2.5rem;
@@ -138,9 +149,9 @@ h3 {
   color: yellow;
 }
 
-.row div {
+.row #columna1 {
   padding-top: 20px;
-  width: 23%;
+  width: 24%;
   border: 2px solid white;
   border-radius: 15px;
   box-shadow: 10px;
@@ -149,7 +160,7 @@ h3 {
 }
 
 .row #columna1:hover, .round:hover {
-  box-shadow: 0 1px 5px 1px white;
+  box-shadow: 0 0px 5px 1px white;
 }
 
 #descripcion {
@@ -174,51 +185,118 @@ h3 {
 
 .round {
   border-radius: 15px;
-  box-shadow: 0 1px 5px 1px gray;
+  box-shadow: 0 0px 5px 1px gray;
 }
 /******** End of Menu de la semana ********/
 
+/******** Platillos ********/
+#platillos {
+  margin-top: 50px;
+  margin-bottom: -40px;
+}
+
+#fotoPlatillos {
+  border-radius: 15px;
+  box-shadow: 0 0px 5px 2px lightgray;
+}
+
+#fotoPlatillos:hover {
+  box-shadow: 0px 0px 5px 3px white;
+}
+
+#platillos a {
+  text-decoration: none;
+}
+
+#platillosLink span {
+  color: white;
+  float: left;
+  position: relative;
+  bottom: 11.4%;
+  width: 100%;
+  background-color: #4a4a4a;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+/******** End of Platillos ********/
 
 
 /************************ MEDIA QUERY /************************
 /********** Xtra-Large devices **********/
 @media (min-width: 1400px) {
+  .row #platillos {
+     width: 30%;
+  }
+
+  #platillosLink span {
+    bottom: 8%;
+  }
+
 
 }
 
 
 /********** Large devices **********/
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .row div {
+  .row #columna1 {
     width: 23%;
+  }
+
+  .row #platillos {
+     width: 35%;
+  }
+
+  #platillosLink span {
+    bottom: 8%;
   }
 }
 
 /********** Medium devices **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
-  .row div {
+  .row #columna1 {
       width: 47%;
   }
 
   #descripcion {
     font-size: 16px;
   }
+
+  .row #platillos {
+     width: 35%;
+  }
+
+  #platillosLink span {
+    bottom: 9.5%;
+  }
 }
 
 /********** Small devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    .carousel-control-prev, .carousel-control-next {
-      width: 50px;
-    }
 
-    #descripcion {
-      font-size: 14.7px;
-    }
+  .carousel-control-prev, .carousel-control-next {
+    width: 50px;
+  }
 
-    .row div {
-      width: 47%;
-    }
+  #descripcion {
+    font-size: 14.7px;
+  }
+
+  .row #columna1 {
+    width: 47%;
+  }
+
+  .row #platillos {
+    width: 45%;
+  }
+
+  #platillosLink span {
+    bottom: 9.5%;
+  }
 }
 
 /********** Xtra-small devices **********/
@@ -231,8 +309,16 @@ h3 {
     font-size: 16px;
   }
 
-  .row div {
+  .row #columna1 {
     width: 90%;
+  }
+
+  .row #platillos {
+    width: 60%;
+  }
+
+  #platillosLink span {
+    bottom: 9.5%;
   }
 }
 
@@ -244,6 +330,18 @@ h3 {
   }
 
   h1 {
-    margin-top: 25px;
+    margin-top: 15px;
+  }
+
+  .row #platillos {
+    width: 60%;
+  }
+
+  #platillosLink span {
+    bottom: 11%;
+  }
+
+  #platillos {
+    margin-bottom: -50px;
   }
 }

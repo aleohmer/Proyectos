@@ -14,7 +14,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-expand-md">
 	   	<div class="container-fluid">
-	   		<a class="navbar-brand" href="Index.html">
+	   		<a class="navbar-brand" href="index.html">
 	   			<img class="float-start" id="img-logo" src="img/Estilo_Deleite_Logo1peque.png">
 	   			<h1 id="tituloPagina">Estilo & <br class="d-sm-none">Deleite</h1>
 	   		</a>
@@ -25,17 +25,17 @@
 	   			
 	   		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 	   			<ul class="navbar-nav text-center">
-	   				<li class="nav-item">
-	   						<a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+	   				<li id="item" class="nav-item">
+	   						<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
 	   				</li>
-	   				<li class="nav-item">
-	   						<a class="nav-link" href="Index.html">Platillos</a>
+	   				<li id="item" class="nav-item">
+	   						<a class="nav-link" href="index.html">Platillos</a>
 	   				</li>
 	   				<li class="nav-item d-none d-lg-block">
-	   						<a class="nav-link" href="https://api.whatsapp.com/send?phone=50688021693" target="_blank">Whatsapp:<br>8802-1693</a>
+	   						<a class="nav-link" href="https://api.whatsapp.com/send?phone=50688021693" target="_blank">Whatsapp<br>8802-1693</a>
 	   				</li>
 	   				<li class="nav-item d-lg-none">
-	   						<a class="nav-link" href="whatsapp://send?phone=50688021693">Whatsapp:<br>8802-1693</a>
+	   						<a class="nav-link" href="whatsapp://send?phone=50688021693">Whatsapp<br>8802-1693</a>
 	   				</li>
 	   			</ul>
 	   		</div> <!--- End of callpasable menu --->
@@ -71,44 +71,49 @@
 		</div> <!--- End of carousel --->
 
 	<div id="main-content" class="container">
-		<div id="platillos" class="col-8 justify-content-center">
-		</div>
-
 		<h2 id="tituloPrincipal" class="text-center">Menú de la semana</h2>
 
 		<div class="row justify-content-evenly">
 			<div id="columna1" class="col-12 col-md-3">
-				<img id="fotoPlatillo" src="img/plato1.png" width="150px" height="125px" class="round mx-auto d-block">
+				<img id="fotoPlatillo" src="img/Plato1.png" width="150px" height="125px" class="round mx-auto d-block">
 				<h3 id="tituloPlatillo">Curry Vegetariano</h3>
 				<p id="descripcion">Vegetales variados en un curry tailandés a base de leche de coco. Acompañado con arroz blanco</p>
 				<p id="priceTag" class="text-end"><span id="colones">&#8353;</span><span id="precio">3500</span></p>
 			</div>
 			<div id="columna1" class="col-12 col-md-3">
-				<img id="fotoPlatillo" src="img/plato3.png" width="150px" height="125px" class="round mx-auto d-block">
+				<img id="fotoPlatillo" src="img/Plato3.png" width="150px" height="125px" class="round mx-auto d-block">
 				<h3 id="tituloPlatillo">Curry Vegetariano</h3>
 				<p id="descripcion">Vegetales variados en un curry tailandés a base de leche de coco. Acompañado con arroz blanco</p>
 				<p id="priceTag" class="text-end"><span id="colones">&#8353;</span><span id="precio">3500</span></p>
 			</div>
 			<div id="columna1" class="col-12 col-md-3">
-				<img id="fotoPlatillo" src="img/plato15.png" width="150px" height="125px" class="round mx-auto d-block">
+				<img id="fotoPlatillo" src="img/Plato15.png" width="150px" height="125px" class="round mx-auto d-block">
 				<h3 id="tituloPlatillo">Curry Vegetariano</h3>
 				<p id="descripcion">Vegetales variados en un curry tailandés a base de leche de coco. Acompañado con arroz blanco</p>
 				<p id="priceTag" class="text-end"><span id="colones">&#8353;</span><span id="precio">3500</span></p>
 			</div>
 			<div id="columna1" class="col-12 col-md-3">
-				<img id="fotoPlatillo" src="img/plato11.png" width="150px" height="125px" class="round mx-auto d-block">
+				<img id="fotoPlatillo" src="img/Plato11.png" width="150px" height="125px" class="round mx-auto d-block">
 				<h3 id="tituloPlatillo">Curry Vegetariano</h3>
 				<p id="descripcion">Vegetales variados en un curry tailandés a base de leche de coco. Acompañado con arroz blanco</p>
 				<p id="priceTag" class="text-end"><span id="colones">&#8353;</span><span id="precio">3500</span></p>
 			</div>
-		</div>	
+		</div>	<!--- End of Menu semanal --->
 
-		<div id="platillos" class="col-8 justify-content-center">
-			<p>Michi feo.</p>
-			
-		</div>
+		<div class="row justify-content-center">
+			<div id="platillos" class="col-3">
+				<a id="platillosLink" href="index.html">
+					<img id="fotoPlatillos" src="img/Plato2.png" width="100%" height="80%" class="mx-auto d-block">
+					<span>Platillos</span>
+				</a>
+			</div>
+			<p id="descripcionPlatillos" class="text-center">Aquí puede encontrar todos nuestros platillos.</p>
+		</div> <!--- End of pagina platillos --->
 	</div> <!--- End of container --->
 
+
+
+		
 	</div>
 
 
