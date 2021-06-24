@@ -28,3 +28,23 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener("click", scrollToTop)
 document.addEventListener("scroll", handleScroll)
 
+//******************************************************************//
+//***                      SLIDE DOWN NAVBAR                     ***//
+//******************************************************************//
+
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("navbar").style.top = "20";
+//   } else {
+//     document.getElementById("navbar").style.top = "-50px";
+//   }
+// }
+
+$('.navbar').click(function() {
+  $('nav').slideUp("slow");
+});
+$('.navbar').click(function() {
+  $('nav').slideDown("slow");
+});

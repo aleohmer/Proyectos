@@ -1,6 +1,6 @@
 /******** To top button ********/
 .scrollToTopBtn {
-  background-color: #4a4a4a;
+  background-color: #585858;
   border: none;
   border-radius: 25px;
   color: white;
@@ -29,14 +29,15 @@
 }
 
 .scrollToTopBtn:hover {
-    background-color: white;
-    color: #4a4a4a;
+    background-color: #ffffff;
+    color: #221f1f;
 }
 /******** End of To top button ********/
 
 body {
-  background-color: #2a2a2a;
+  background-color: #221f1f;
   color: white;
+  font-size: 16px;
 }
 
 .container {
@@ -48,13 +49,15 @@ body {
 /******** Navbar ********/
 h1 {
   margin: 25px 0px 0px 50px;
-  color: #2a2a2a;
+  color: #221f1f;
   font-weight: bold;
 }
 
 .navbar{
-  border-radius: 15px;
-  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ffffff;
+  min-height:0;
 }
 
 #img-logo {
@@ -63,11 +66,11 @@ h1 {
 }
 
 #item {
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .navbar-nav .nav-link {
-  color: #2a2a2a;
+  color: #221f1f;
   font-weight: bold;
   border-radius: 15px;
 }
@@ -75,7 +78,7 @@ h1 {
 .nav-link:focus, .nav-link:hover {
   text-decoration: none;
   color: white;
-  background-color: #2a2a2a;
+  background-color: #221f1f;
   border-radius: 15px;
 }
 
@@ -97,7 +100,7 @@ h1 {
   background-position: center;
   background-size: 100%;
   border-width: 5px;
-  border-color: #2a2a2a;
+  border-color: #221f1f;
 }
 
 .navbar-toggler {
@@ -111,7 +114,7 @@ h1 {
 }
 
 .navbar-toggler:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .navbar-toggler:focus {
@@ -121,38 +124,60 @@ h1 {
 }
 /******** End of Navbar ********/
 
+
 /******** Carousel ********/
 .carousel-control-prev, .carousel-control-next {
   opacity: 20%;
-  background-color: black;
+  background-color: #000000;
   width: 80px;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
   opacity: 60%;
 }
+
+
+/*#carousel {
+  margin-top: 126px;
+}*/
 /******** End ofCarousel ********/
+
 
 /******** Menu de la semana ********/
 #main-content {
   margin-top: 50px;
 }
 
+#entregas {
+  font-size: 20px;
+  background-color: #585858;
+  border-radius: 15px;
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+}
+
 h2 {
-  margin-bottom: 60px;
-  font-size: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 3rem;
+  color: #ffc916;
+  font-family: 'Dancing Script', cursive;
 }
 
 h3 {
   padding-top: 10px;
   text-align: center;
-  color: yellow;
+  color: #ffc916;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.9rem;
 }
 
 .row #columna1 {
   padding-top: 20px;
   width: 24%;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   border-radius: 15px;
   box-shadow: 10px;
   box-sizing: border-box;
@@ -160,11 +185,10 @@ h3 {
 }
 
 .row #columna1:hover, .round:hover {
-  box-shadow: 0 0px 5px 1px white;
+  box-shadow: 0 0px 5px 1px #ffffff;
 }
 
 #descripcion {
-  font-size: 15px;
   text-align: justify;
 }
 
@@ -189,10 +213,15 @@ h3 {
 }
 /******** End of Menu de la semana ********/
 
+
 /******** Platillos ********/
+#prueba {
+  -webkit-transition: 2s smooth;
+}
+
 #platillos {
   margin-top: 50px;
-  margin-bottom: -40px;
+  margin-bottom: -50px;
 }
 
 #fotoPlatillos {
@@ -221,9 +250,43 @@ h3 {
   font-size: 1.4rem;
   font-weight: bold;
 }
-
-
 /******** End of Platillos ********/
+
+
+
+/******** Footer ********/
+footer {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.row div {
+  margin-top: 10px;
+}
+
+#footerItem1 {
+  text-decoration: none;
+  color: #221f1f;
+}
+
+#footerItem1:hover {
+  font-weight: bold;
+}
+
+#itemFooter {
+  margin-top: 5px;
+  color: #221f1f;
+}
+
+.caca {
+  text-indent: 30px;
+}
+
+
+/******** End of Footer ********/
 
 
 /************************ MEDIA QUERY /************************
@@ -236,8 +299,6 @@ h3 {
   #platillosLink span {
     bottom: 8%;
   }
-
-
 }
 
 
@@ -273,6 +334,11 @@ h3 {
   #platillosLink span {
     bottom: 9.5%;
   }
+
+  #entregas {
+    font-size: 20px;
+    width: 70%;
+  }
 }
 
 /********** Small devices **********/
@@ -297,6 +363,11 @@ h3 {
   #platillosLink span {
     bottom: 9.5%;
   }
+
+  #entregas {
+    font-size: 18px;
+    width: 80%;
+  }
 }
 
 /********** Xtra-small devices **********/
@@ -320,17 +391,26 @@ h3 {
   #platillosLink span {
     bottom: 9.5%;
   }
+
+  #entregas {
+    font-size: 18px;
+    width: 90%;
+  }
 }
 
 
 /********** Xtra-Xtra-small devices **********/
 @media (max-width: 575px) {
-  #slide {
-    height: 150px;
-  }
+  
 
   h1 {
     margin-top: 15px;
+  }
+
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 35px;
   }
 
   .row #platillos {
@@ -338,10 +418,15 @@ h3 {
   }
 
   #platillosLink span {
-    bottom: 11%;
+    bottom: 14%;
   }
 
   #platillos {
-    margin-bottom: -50px;
+    margin-bottom: -20px;
+  }
+
+  #entregas {
+    font-size: 16px;
+    width: 70%;
   }
 }
